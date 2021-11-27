@@ -1,0 +1,13 @@
+import java.util.*;
+import java.util.stream.*;
+import java.util.function.Function;
+
+public class DescendingOrder {
+    public static void main(String args[]) {
+            List<Integer> myList = Arrays.asList(544,85,36,9,47,12,35,2,0,154,895);
+
+             myList.stream()
+                   .sorted(Collections.reverseOrder())
+                   .forEach(System.out::println);
+    }
+}
